@@ -29,7 +29,7 @@ const App = () => {
           <ProtectedRoute path="/profile" component={Profile} />
           <ProtectedRoute path="/external-api" component={ExternalApi} />
         </Switch>
-      </div>
+      </div>ד
       <Footer />
     </div>
     </div>

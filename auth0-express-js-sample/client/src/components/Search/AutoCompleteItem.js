@@ -22,7 +22,7 @@ const AutoCompleteItem = ({
                         <img src={flag} alt="" style={{ width: "30px" }} />
                     </p>
                     <p className="mb-0 badge badge-primary">{region}</p>
-                    <p className="mb-0 ml-2 badge badge-secondary">{capital}</p>
+                    <p className="mb-0 ml-2 badge badge-Warning">{capital}</p>
                 </div>
             </div>
         </li>

@@ -50,7 +50,7 @@ class BootstrapNavbar extends React.Component {
                                         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                                     </NavDropdown>
                                 </Nav>
-                                <div className="auth">
+                                <div className="auth" >
                                     <AuthNav />
                                 </div>
                             </Navbar.Collapse>

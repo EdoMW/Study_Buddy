@@ -91,40 +91,42 @@ const Feed = () => {
   );
 
 
-  return (isAuthenticated ?
+  return (isAuthenticated ? <text className="feedText">Login to see the feed (I switchd them for easier working) </text>
+     :
+     <div className='feed'>
+     <Button variant="success" style={{ float: "center" }} onClick={toggleCardVisiblity}>Create New Request</Button>
 
-    <div className='feed'>
-          <Button variant="success" style={{ float: "center" }} onClick={toggleCardVisiblity}>Create New Request</Button>
+{ContactCardComponent}
+ {/* <DropDown
+   degrees={degrees}
+   courses={selectedDegree && selectedDegree.courses}
+   selectedDegree={selectedDegree}
+   selectedCourse={selectedCourse}
+   onDegreeSelectClick={handleDegreeSelectClick}
+   onCourseSelectClick={handleCourseSelectClick}
+ /> */}
+ <div className="searchCompD">
+   <SearchComp/>
+ </div>
 
-     {ContactCardComponent}
-      {/* <DropDown
-        degrees={degrees}
-        courses={selectedDegree && selectedDegree.courses}
-        selectedDegree={selectedDegree}
-        selectedCourse={selectedCourse}
-        onDegreeSelectClick={handleDegreeSelectClick}
-        onCourseSelectClick={handleCourseSelectClick}
-      /> */}
-      <SearchComp/>
-      
+ <h4> Select Filters:</h4>
+ <div class="bigjumbo">
+   <Jumbotron >
 
-      <h4> Select Filters:</h4>
-      <div class="bigjumbo">
-        <Jumbotron >
+     <p>
+       <div class="jumbo">
+         <Filters />
+       </div>
+     </p>
+   </Jumbotron>
+ </div>
+ <h4> Results
+           Found:</h4>
+ {compsToRender}
+</div>
 
-          <p>
-            <div class="jumbo">
-              <Filters />
-            </div>
-          </p>
-        </Jumbotron>
-      </div>
-      <h4> Results
-                Found:</h4>
-      {compsToRender}
-    </div> :
-    <text className="feedText">Login to see the feed </text>)
-};
+    
+  )};
 
 export default Feed
 

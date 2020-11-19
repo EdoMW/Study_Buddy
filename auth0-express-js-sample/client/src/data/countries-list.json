@@ -4,7 +4,8 @@
         "capital": "Kabul",
         "region": "Asia",
         "alpha2Code": "AF",
-        "flag": "https://restcountries.eu/data/afg.svg"
+        "flag": "https://restcountries.eu/data/afg.svg",
+        "apple": "apple"
     },
     {
         "name": "Åland Islands",

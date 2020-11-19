@@ -35,6 +35,7 @@ const ContentCard = (props) => {
                                 </a>
                             </Typography>
                             <Typography color="textSecondary" variant="h6" component="h3" className={'role'}>
+                                בוגר תואר ראשון בהנדסת תעשיה וניהול
                             </Typography>
                         </CardContent>
                     </Card>
